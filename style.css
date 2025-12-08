@@ -1,0 +1,120 @@
+body { 
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#0d1117;
+    color: #e6edf3;
+}
+section#about{
+    margin: 20px;
+    padding: 20px;
+    background-color: #161b22;
+    border-radius: 1px;
+    font-family: "Fira Code", Consolas, monospace;
+}
+section#about h2{
+    margin-top: 0;
+    color: #58a6ff;
+    font-weight: 900;
+    font-size: 2.6rem;
+}
+section#about p#mhu{
+    font-size: 1.8rem;
+    color: #9bb3d0;
+}
+#name1{
+    font-size: 1.8rem;
+    color: #0073ff;
+}
+/* ---------------- HERO LAYOUT ---------------- */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+/* profile image wrapper */
+.hero-img {
+    position: relative;   /* IMPORTANT for overlap badge */
+}
+
+/* profile image */
+.hero-img img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ecff9e;
+    box-shadow: 0 0 12px #f4fead;
+}
+
+/* hero text */
+.hero-text {
+    margin-left: 10px;
+    font-family: "Fira Code", Consolas, monospace;
+}
+
+/* ---------------- DISCORD OVERLAY BADGE ---------------- */
+.discord-badge {
+    position: absolute;
+    right: -5px;       /* pushes badge OUTSIDE the image */
+    bottom: -5px;      /* SAME as screenshot you showed */
+    width: 40px;
+    height: 40px;
+    background: #2f3136;
+    border-radius: 50%;
+    border: 2px solid #ffffff40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discord-badge img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);  /* white */
+}
+.highlight {
+  background: #58a6ff33;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+/* Social Links Container */
+.social-links {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;       /* mobile friendly */
+}
+
+/* Each social icon + text */
+.social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #e6edf3;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+    opacity: 0.85;
+}
+
+/* Hover effect */
+.social:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+/* Icon styling */
+.social img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(95%);
+    transition: 0.2s ease;
+}
+
+.social:hover img {
+    filter: brightness(0) saturate(100%) invert(100%);
+}
