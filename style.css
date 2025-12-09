@@ -15,7 +15,6 @@ section#about{
 section#about h2{
     margin-top: 0;
     color: #58a6ff;
-    font-weight: 900;
     font-size: 2.6rem;
 }
 section#about p#mhu{
@@ -26,7 +25,6 @@ section#about p#mhu{
     font-size: 1.8rem;
     color: #0073ff;
 }
-/* ---------------- HERO LAYOUT ---------------- */
 .hero {
     display: flex;
     align-items: center;
@@ -34,12 +32,10 @@ section#about p#mhu{
     padding: 20px 30px;
 }
 
-/* profile image wrapper */
 .hero-img {
-    position: relative;   /* IMPORTANT for overlap badge */
+    position: relative;  
 }
 
-/* profile image */
 .hero-img img {
     width: 110px;
     height: 110px;
@@ -48,18 +44,14 @@ section#about p#mhu{
     border: 3px solid #ecff9e;
     box-shadow: 0 0 12px #f4fead;
 }
-
-/* hero text */
 .hero-text {
     margin-left: 10px;
     font-family: "Fira Code", Consolas, monospace;
 }
-
-/* ---------------- DISCORD OVERLAY BADGE ---------------- */
 .discord-badge {
     position: absolute;
-    right: -5px;       /* pushes badge OUTSIDE the image */
-    bottom: -5px;      /* SAME as screenshot you showed */
+    right: -5px;       
+    bottom: -5px;      
     width: 40px;
     height: 40px;
     background: #2f3136;
@@ -73,23 +65,20 @@ section#about p#mhu{
 .discord-badge img {
     width: 20px;
     height: 20px;
-    filter: invert(100%);  /* white */
+    filter: invert(100%); 
 }
 .highlight {
   background: #58a6ff33;
   padding: 2px 4px;
   border-radius: 4px;
 }
-/* Social Links Container */
 .social-links {
     margin-top: 18px;
     display: flex;
     gap: 18px;
     align-items: center;
-    flex-wrap: wrap;       /* mobile friendly */
+    flex-wrap: wrap;       
 }
-
-/* Each social icon + text */
 .social {
     display: flex;
     align-items: center;
@@ -100,14 +89,10 @@ section#about p#mhu{
     transition: 0.2s ease;
     opacity: 0.85;
 }
-
-/* Hover effect */
 .social:hover {
     opacity: 1;
     transform: translateY(-2px);
 }
-
-/* Icon styling */
 .social img {
     width: 20px;
     height: 20px;
@@ -118,3 +103,112 @@ section#about p#mhu{
 .social:hover img {
     filter: brightness(0) saturate(100%) invert(100%);
 }
+section#skills{
+    margin :20px;
+    padding : 20px;
+    background-color: #161b22;
+    border-radius: 1px;
+    font-family: "Fira Code", Consolas, monospace;
+}
+section#skills h2{
+    margin-top: 0;
+    color: #58a6ff;
+    font-weight: 900;
+    font-size: 2.6rem;
+}
+section#skills ul{
+    font-size: 1.8rem;
+    color: #9bb3d0;
+    text-wrap: inherit
+    list-style-type: square;
+    }
+section#projects h2{
+    font-size: 2.6rem;
+    color: #58a6ff; 
+}
+section#projects{
+ margin :20px;
+    padding : 20px;
+    background-color: #161b22;
+    border-radius: 1px;
+    font-family: "Fira Code", Consolas, monospace;
+}
+section#projects p{
+    font-size: 1.8rem;
+    color: #9bb3d0;
+    text-wrap: inherit}
+    .coming-soon {
+  text-align: center;
+  margin: 40px 0;
+}
+.loading-container {
+  text-align: center;
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background: #58a6ff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: .4s;
+}
+@keyframes bounce {                                        
+  from { transform: translateY(0); opacity: 0.4; }
+  to   { transform: translateY(-8px); opacity: 1; }
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161b22;
+    padding:18px 30px;
+    border-bottom: 1px #1f2937 solid;
+    postion: sticky;
+    top:0;
+    z-index: 1000;
+    font-family: "Fira Code", Consolas, monospace;
+}
+.nav-left {
+  display: flex;
+  align-items: center;   /* PERFECT vertical centering */
+  gap: 10px;             /* space between logo and name */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6edf3;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #58a6ff;
+  text-shadow: 0 0 6px #58a6ff;
+}
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #58a6ff;
+}
+.nav-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;          /* optional, remove if you want sharp edges */
+}
+
+
