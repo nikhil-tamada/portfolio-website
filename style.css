@@ -184,8 +184,8 @@ section#projects p{
 }
 .nav-left {
   display: flex;
-  align-items: center;   /* PERFECT vertical centering */
-  gap: 10px;             /* space between logo and name */
+  align-items: center;   
+  gap: 10px;             
 }
 
 .nav-links a {
@@ -208,7 +208,7 @@ section#projects p{
 .nav-logo {
   width: 28px;
   height: 28px;
-  border-radius: 4px;          /* optional, remove if you want sharp edges */
+  border-radius: 4px;          
 }
 
 
