@@ -119,7 +119,7 @@ section#skills h2{
 section#skills ul{
     font-size: 1.8rem;
     color: #9bb3d0;
-    text-wrap: inherit
+    text-wrap: inherit;
     list-style-type: square;
     }
 section#projects h2{
@@ -177,7 +177,7 @@ section#projects p{
     background: #161b22;
     padding:18px 30px;
     border-bottom: 1px #1f2937 solid;
-    postion: sticky;
+    position: sticky;
     top:0;
     z-index: 1000;
     font-family: "Fira Code", Consolas, monospace;
